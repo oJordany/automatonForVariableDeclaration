@@ -83,7 +83,11 @@ transitions = {
 {qf}
 ~~~
 
-<h3><a name="representacao">Representação;</a></h3>
+<h3><a name="representacao">Representação.</a></h3>
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/87232098/206476992-11bdb4c4-c763-4051-bb25-037f926c5477.jpeg" width="700px" />
+</div>
 
 <h1></h1>
 
