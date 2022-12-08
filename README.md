@@ -196,8 +196,8 @@ palavra recusada
 
 <h2><a name="equipe">👥 Equipe</a></h2> 
 
-#### 👤[Aimeê Miranda Ribeiro;](https://github.com/Eemiaa)
+#### 👤[Aimeê Miranda Ribeiro](https://github.com/Eemiaa) | 202104940014
  
-#### 👤[Letícia Costa da Silva;](https://github.com/leticiacostt)
-#### 👤[Luiz Jordany de Sousa Silva;](https://github.com/oJordany)
-#### 👤[Syanne Karoline Moreira Tavares](https://github.com/syannekaroline)
+#### 👤[Letícia Costa da Silva](https://github.com/leticiacostt) | 202104940017
+#### 👤[Luiz Jordany de Sousa Silva](https://github.com/oJordany) | 202104940005
+#### 👤[Syanne Karoline Moreira Tavares](https://github.com/syannekaroline) | 202104920029
