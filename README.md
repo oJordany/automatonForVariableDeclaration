@@ -5,29 +5,29 @@ A solução aqui apresentada visa a implementaçãode um software capaz de simul
 
 <h2>&#x2714 Conteúdos</h2>
 <ul type="pointer">
-  <li><a href="#Começando">Começando</a></li>
-  <li><a href="#Estrutura do AFD">Estrutura do AFD</a></li>
-   <li><a href="#Funcionalidades">Funcionalidades</a></li>
-  <li><a href="#Pré-Requisitos">Pré-Requisitos</a></li>
-  <li><a href="#Como Executar">Como Executar</a></li>
-  <li><a href="#Exemplos">Exemplos</a></li>
+  <li><a href="#começando">Começando</a></li>
+  <li><a href="#estrutura do afd">Estrutura do AFD</a></li>
+   <li><a href="#funcionalidades">Funcionalidades</a></li>
+  <li><a href="#pre-requisitos">Pré-Requisitos</a></li>
+  <li><a href="#como executar">Como Executar</a></li>
+  <li><a href="#exemplos">Exemplos</a></li>
   <ul>
-    <li><a href="#Palavra Aceita">Palavra Aceita</a></li>
-    <li><a href="#Palavra Recusada">Palavra Recusada</a></li>
-    <li><a href="#Erro de Declaração de Tipo">Erro de Declaração de Tipo</a></li>
+    <li><a href="#palavra aceita">Palavra Aceita</a></li>
+    <li><a href="#palavra recusada">Palavra Recusada</a></li>
+    <li><a href="#erro de declaração de tipo">Erro de Declaração de Tipo</a></li>
   </ul>
-  <li><a href="#Equipe">Equipe</a></li>
+  <li><a href="#equipe">Equipe</a></li>
  
   
 </ul>
 
-<h2><a name="Começando">🚀 Começando</a></h2>
+<h2><a name="começando">🚀 Começando</a></h2>
 
 O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Univerfidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
 
 <h1></h1>
 
-<h2><a name="Estrutura do AFD">🛠️ Estrutura do AFD</a></h2>
+<h2><a name="estrutura do afd">🛠️ Estrutura do AFD</a></h2>
 
 #### Σ - Alfabeto de símbolos de Entrada;
 ~~~Python
@@ -73,7 +73,7 @@ transitions = {
 
 <h1></h1>
 
-<h2><a name="Funcionalidades">🕹️ Funcionalidades</a></h2>
+<h2><a name="funcionalidades">🕹️ Funcionalidades</a></h2>
 
 * Ler uma entrada em texto com as seguintes estruturas:
     
@@ -93,7 +93,7 @@ transitions = {
 
 <h1></h1>
 
-<h2><a name="Pré-requisitos">📦 Pré-requisitos</a></h2> 
+<h2><a name="pre-requisitos">📦 Pré-requisitos</a></h2> 
 
 ~~~Python
 Python3+ 
@@ -101,7 +101,7 @@ Python3+
 
 <h1></h1>
 
-<h2><a name="Como Executar">💻 Como Executar</a></h2> 
+<h2><a name="como executar">💻 Como Executar</a></h2> 
 
 Abra o Terminal no diretório do software e digite o seguinte comando: 
 ~~~Python
@@ -128,12 +128,13 @@ Erro de Declaração de Tipo
 ~~~
 <h1></h1>
 
-<h2><a name="Exemplos">🎮 Exemplos</a></h2> 
+<h2><a name="exemplos">🎮 Exemplos</a></h2> 
 
 ~~~Python
 Python dfa.py
 ~~~
-<h3><a name="Palavra Aceita">Palavra Aceita</a></h3> 
+<h3><a name="palavra aceita">Palavra Aceita</a></h3> 
+
 ~~~Python
 int variavel1;
 ~~~
@@ -143,7 +144,7 @@ Tipo primitivo: int
 Variáveis: ['variavel1']
 ~~~
 
-<h3><a name="Palavra Recusada">Palavra Recusada</a></h3> 
+<h3><a name="palavra recusada">Palavra Recusada</a></h3> 
 
 ~~~Python
 bool 1Var;
@@ -152,7 +153,7 @@ bool 1Var;
 ~~~Python
 palavra recusada
 ~~~
-<h3><a name="Erro de Declaração de tipo">Erro de Declaração de tipo</a></h3> 
+<h3><a name="erro de declaração de tipo">Erro de Declaração de tipo</a></h3> 
 
 ~~~Python
 chaars Var1;
@@ -175,7 +176,7 @@ palavra recusada
 
 <h1></h1>
 
-<h2><a name="Equipe">👥 Equipe</a></h2> 
+<h2><a name="equipe">👥 Equipe</a></h2> 
 
 #### 👤[Aimeê Miranda Ribeiro;](https://github.com/Eemiaa)
  
