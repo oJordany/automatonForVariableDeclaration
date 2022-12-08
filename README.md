@@ -7,6 +7,15 @@ A solução aqui apresentada visa a implementaçãode um software capaz de simul
 <ul type="pointer">
   <li><a href="#começando">Começando</a></li>
   <li><a href="#estrutura do afd">Estrutura do AFD</a></li>
+    <ul>
+    <li><a href="#alfabeto">Σ - Alfabeto de símbolos de Entrada;</a></li>
+    <li><a href="#estados">Q – conjunto de estados possíveis do autômato;</a></li>
+    <li><a href="#transicoes">δ - Função de Transição ou Programa;</a></li>
+    <li><a href="#estado inicial">Estado Inicial;</a></li>
+    <li><a href="#estado final">Conjunto de estados finais;</a></li>
+    <li><a href="#representacao">Representação</a></li>
+  </ul>
+  
    <li><a href="#funcionalidades">Funcionalidades</a></li>
   <li><a href="#pre-requisitos">Pré-Requisitos</a></li>
   <li><a href="#como executar">Como Executar</a></li>
@@ -28,8 +37,8 @@ O desenvolvimento desse Software é referente à Terceira Prova da disciplina de
 <h1></h1>
 
 <h2><a name="estrutura do afd">🛠️ Estrutura do AFD</a></h2>
+<h3><a name="alfabeto">Σ - Alfabeto de símbolos de Entrada;</a></h3> 
 
-#### Σ - Alfabeto de símbolos de Entrada;
 ~~~Python
 import strings
 I = {*(string.ascii_letters + "_")}
@@ -37,11 +46,14 @@ M = {*(string.ascii_letters + string.digits + "_")}
 MDI = M.difference(I)
 IUM = I.union(M)
 ~~~
-#### Q – conjunto de estados possíveis do autômato;
+<h3><a name="estados">Q – conjunto de estados possíveis do autômato;</a></h3> 
+
 ~~~Python
 {q0,q1,qf}
 ~~~
-#### δ - Função de Transição ou Programa;
+
+<h3><a name="transicoes">δ - Função de Transição ou Programa;</a></h3> 
+
 ~~~Python
 {"estado atual": {"símbolo processado": "estado alcançado"}}
 
@@ -59,17 +71,19 @@ transitions = {
         }
     }
 ~~~
-#### Estado inicial;
+
+<h3><a name="estado inicial">Estado inicial;</a></h3> 
+
 ~~~Python
 {q0}
 ~~~
-#### Conjunto de estados finais;
+<h3><a name="estado final">Conjunto de estados finais;</a></h3> 
+
 ~~~Python
 {qf}
 ~~~
 
-#### Representação 
-
+<h3><a name="representacao">Representação;</a></h3>
 
 <h1></h1>
 
