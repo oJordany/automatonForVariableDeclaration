@@ -20,12 +20,12 @@ A solução aqui apresentada visa a implementaçãode um software capaz de simul
  
   
 </ul>
+<h2><a name="Começando">🚀 Começando</a></h2>
 
-## 🚀 Começando
 
 O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Univerfidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
 
-## 🛠️ Estrutura do AFD
+<h2><a name="Estrutura do AFD">🛠️ Estrutura do AFD</a></h2>
 
 #### Σ - Alfabeto de símbolos de Entrada;
 ~~~Python
@@ -68,8 +68,7 @@ transitions = {
 
 #### Representação 
 
-
-## 🕹️ Funcionalidades
+<h2><a name="Funcionalidades">🕹️ Funcionalidades</a></h2>
 
 * Ler uma entrada em texto com as seguintes estruturas:
     
@@ -86,13 +85,15 @@ transitions = {
 * Verifica se cada *nome_variave*l respeita as regras de nome das variáveis. 
     
 * Verifica se a linha de entrada termina corretamente com ";".
-    
-## 📦 Pré-requisitos
-~~~~Python
-Python3+ 
-~~~~
 
-## 💻 Como Executar
+<h2><a name="Pré-requisito">📦 Pré-requisitos</a></h2> 
+
+~~~Python
+Python3+ 
+~~~
+
+<h2><a name="Como Executar">💻 Como Executar</a></h2> 
+
 Abra o Terminal no diretório do software e digite o seguinte comando: 
 ~~~Python
 Python dfa.py
@@ -117,12 +118,12 @@ palavra recusada
 Erro de Declaração de Tipo
 ~~~
 
-## 🎮 Exemplos
+<h2><a name="Exemplos">🎮 Exemplos</a></h2> 
 
 ~~~Python
 Python dfa.py
 ~~~
-* Palavra Aceita: 
+<h3><a name="Palavra Aceita">Palavra Aceita</a></h3> 
 ~~~Python
 int variavel1;
 ~~~
@@ -132,7 +133,8 @@ Tipo primitivo: int
 Variáveis: ['variavel1']
 ~~~
 
-* Palavra Recusada
+<h3><a name="Palavra Recusada">Palavra Recusada</a></h3> 
+
 ~~~Python
 bool 1Var;
 ~~~
@@ -140,7 +142,8 @@ bool 1Var;
 ~~~Python
 palavra recusada
 ~~~
-* Erro de declaração de tipo:
+<h3><a name="Erro de Declaração de tipo">Erro de Declaração de tipo</a></h3> 
+
 ~~~Python
 chaars Var1;
 ~~~
@@ -159,7 +162,7 @@ Tipo primitivo: bool
 Variáveis: ['var1', 'var1']
 palavra recusada
 ~~~
-## 👥 Equipe
+<h2><a name="Equipe">👥 Equipe</a></h2> 
 
 #### 👤[Aimeê Miranda Ribeiro;](https://github.com/Eemiaa)
  
