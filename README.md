@@ -93,7 +93,7 @@ transitions = {
 
 <h1></h1>
 
-<h2><a name="Pré-requisito">📦 Pré-requisitos</a></h2> 
+<h2><a name="Pré-requisitos">📦 Pré-requisitos</a></h2> 
 
 ~~~Python
 Python3+ 
