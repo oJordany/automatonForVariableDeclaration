@@ -20,11 +20,14 @@ A solução aqui apresentada visa a implementaçãode um software capaz de simul
  
   
 </ul>
-<h2><a name="Começando">🚀 Começando</a></h2>
 
+<h1></h1>
+
+<h2><a name="Começando">🚀 Começando</a></h2>
 
 O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Univerfidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
 
+<h1></h1>
 <h2><a name="Estrutura do AFD">🛠️ Estrutura do AFD</a></h2>
 
 #### Σ - Alfabeto de símbolos de Entrada;
@@ -68,6 +71,9 @@ transitions = {
 
 #### Representação 
 
+
+<h1></h1>
+
 <h2><a name="Funcionalidades">🕹️ Funcionalidades</a></h2>
 
 * Ler uma entrada em texto com as seguintes estruturas:
@@ -86,11 +92,15 @@ transitions = {
     
 * Verifica se a linha de entrada termina corretamente com ";".
 
+<h1></h1>
+
 <h2><a name="Pré-requisito">📦 Pré-requisitos</a></h2> 
 
 ~~~Python
 Python3+ 
 ~~~
+
+<h1></h1>
 
 <h2><a name="Como Executar">💻 Como Executar</a></h2> 
 
@@ -117,6 +127,7 @@ palavra recusada
 ~~~bash
 Erro de Declaração de Tipo
 ~~~
+<h1></h1>
 
 <h2><a name="Exemplos">🎮 Exemplos</a></h2> 
 
@@ -162,6 +173,9 @@ Tipo primitivo: bool
 Variáveis: ['var1', 'var1']
 palavra recusada
 ~~~
+
+<h1></h1>
+
 <h2><a name="Equipe">👥 Equipe</a></h2> 
 
 #### 👤[Aimeê Miranda Ribeiro;](https://github.com/Eemiaa)
