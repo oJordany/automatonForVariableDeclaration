@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>47.0</x>
+			<y>133.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>194.0</x>
+			<y>133.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>357.0</x>
+			<y>133.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read>,</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>;</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>I</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>M</read>
+		</transition>
+		<note>
+			<text>	I	M	,	;
+q0	q1	Ø	Ø	Ø
+
+q1	Ø	q1	q0	q2
+
+q2	Ø	Ø	Ø	Ø</text>
+			<x>736.0</x>
+			<y>49.0</y>
+		</note>
+		<note>
+			<text>{
+     "q0": {
+                 I : "q1", 
+                 M - I : None, 
+                 "," : None, 
+                 ";" : None
+               },
+      "q1": {...},
+      "q2": {...}
+}</text>
+			<x>1051.0</x>
+			<y>347.0</y>
+		</note>
+		<note>
+			<text>I = {
+         "a","b","c","d","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+         "A","B","C","D","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+         "_"
+}
+M = {
+         "a","b","c","d","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
+         "A","B","C","D","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+         "_","0","1","2","3","4","5","6","7","8","9"
+}</text>
+			<x>27.0</x>
+			<y>331.0</y>
+		</note>
+		<note>
+			<text>	|
+	|
+	|
+Convertendo para dicionário
+ 	|
+ 	|
+                      ↓</text>
+			<x>1019.0</x>
+			<y>186.0</y>
+		</note>
+	</automaton>
+</structure>
