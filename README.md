@@ -21,13 +21,12 @@ A solução aqui apresentada visa a implementaçãode um software capaz de simul
   
 </ul>
 
-<h1></h1>
-
 <h2><a name="Começando">🚀 Começando</a></h2>
 
 O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Univerfidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
 
 <h1></h1>
+
 <h2><a name="Estrutura do AFD">🛠️ Estrutura do AFD</a></h2>
 
 #### Σ - Alfabeto de símbolos de Entrada;
