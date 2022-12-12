@@ -1,43 +1,42 @@
 
-# AFD - Autômato Finito Determinístico 
+# AFD - Autômato Finito Determinístico
 
 A solução aqui apresentada visa a implementaçãode um software capaz de simular a verificação de declaração de variáveis em C++.
 
 <h2>&#x2714 Conteúdos</h2>
 <ul type="pointer">
-  <li><a href="#começando">Começando</a></li>
-  <li><a href="#estrutura do afd">Estrutura do AFD</a></li>
-    <ul>
+  <li><a href="#comecando">Começando</a></li>
+  <li><a href="#estrutura-do-afd">Estrutura do AFD</a></li>
+  <ul>
     <li><a href="#alfabeto">Σ - Alfabeto de símbolos de Entrada;</a></li>
     <li><a href="#estados">Q – conjunto de estados possíveis do autômato;</a></li>
     <li><a href="#transicoes">δ - Função de Transição ou Programa;</a></li>
-    <li><a href="#estado inicial">Estado Inicial;</a></li>
-    <li><a href="#estado final">Conjunto de estados finais;</a></li>
+    <li><a href="#estado-inicial">Estado Inicial;</a></li>
+    <li><a href="#estado-final">Conjunto de estados finais;</a></li>
     <li><a href="#representacao">Representação</a></li>
   </ul>
-  
-   <li><a href="#funcionalidades">Funcionalidades</a></li>
+  <li><a href="#funcionalidades">Funcionalidades</a></li>
   <li><a href="#pre-requisitos">Pré-Requisitos</a></li>
-  <li><a href="#como executar">Como Executar</a></li>
+  <li><a href="#como-executar">Como Executar</a></li>
   <li><a href="#exemplos">Exemplos</a></li>
   <ul>
-    <li><a href="#palavra aceita">Palavra Aceita</a></li>
-    <li><a href="#palavra recusada">Palavra Recusada</a></li>
-    <li><a href="#erro de declaração de tipo">Erro de Declaração de Tipo</a></li>
+    <li><a href="#palavra-aceita">Palavra Aceita</a></li>
+    <li><a href="#palavra-recusada">Palavra Recusada</a></li>
+    <li><a href="#erro-de-declaracao-de-tipo">Erro de Declaração de Tipo</a></li>
   </ul>
   <li><a href="#equipe">Equipe</a></li>
- 
-  
 </ul>
 
-<h2><a name="começando">🚀 Começando</a></h2>
+<h2><a name="comecando">🚀 Começando</a></h2>
 
-O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Univerfidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
+O desenvolvimento desse Software é referente à Terceira Prova da disciplina de Linguagens Formais, Autômatos e Computabilidade da Universidade Federal do Pará - UFPA, que solicitava a implementação de um Autômato Finito Determinístico para processar Tipos e Nomes de Variáveis da linguagem C++.
+
+Para fins de entendimento, há um arquivo com a extensão ```.jff``` referente a ideia do autômato que pode ser aberto com o software JFLAP. Além disso, há um arquivo jupyter (```.ipynb```) na pasta codeExplanation e um pdf com a explicação do código.
 
 <h1></h1>
 
-<h2><a name="estrutura do afd">🛠️ Estrutura do AFD</a></h2>
-<h3><a name="alfabeto">Σ - Alfabeto de símbolos de Entrada;</a></h3> 
+<h2><a name="estrutura-do-afd">🛠️ Estrutura do AFD</a></h2>
+<h3><a name="alfabeto">Σ - Alfabeto de símbolos de Entrada;</a></h3>
 
 ~~~Python
 import strings
@@ -46,13 +45,14 @@ M = {*(string.ascii_letters + string.digits + "_")}
 MDI = M.difference(I)
 IUM = I.union(M)
 ~~~
-<h3><a name="estados">Q – conjunto de estados possíveis do autômato;</a></h3> 
+
+<h3><a name="estados">Q – conjunto de estados possíveis do autômato;</a></h3>
 
 ~~~Python
 {q0,q1,qf}
 ~~~
 
-<h3><a name="transicoes">δ - Função de Transição ou Programa;</a></h3> 
+<h3><a name="transicoes">δ - Função de Transição ou Programa;</a></h3>
 
 ~~~Python
 {"estado atual": {"símbolo processado": "estado alcançado"}}
@@ -72,12 +72,13 @@ transitions = {
     }
 ~~~
 
-<h3><a name="estado inicial">Estado inicial;</a></h3> 
+<h3><a name="estado-inicial">Estado inicial;</a></h3>
 
 ~~~Python
 {q0}
 ~~~
-<h3><a name="estado final">Conjunto de estados finais;</a></h3> 
+
+<h3><a name="estado-final">Conjunto de estados finais;</a></h3>
 
 ~~~Python
 {qf}
@@ -94,24 +95,24 @@ transitions = {
 <h2><a name="funcionalidades">🕹️ Funcionalidades</a></h2>
 
 * Ler uma entrada em texto com as seguintes estruturas:
-    
-    - tipo_variavel nome_variavel;
-    - tipo_variavel nome_variavel_1, nome_variavel_2, (...);
 
-* **Processar a entrada** e **verificar se ela é aceita ou não**. Para isso, é verificado se o *tipo_variavel* é de algum tipo disponível na linguagem c++, que são : 
-    - char
-    - int
-    - bool
-    - float
-    - double 
-    
-* Verifica se cada *nome_variave*l respeita as regras de nome das variáveis. 
-    
+  * tipo_variavel nome_variavel;
+  * tipo_variavel nome_variavel_1, nome_variavel_2, (...);
+
+* **Processar a entrada** e **verificar se ela é aceita ou não**. Para isso, é verificado se o *tipo_variavel* é de algum tipo disponível na linguagem c++, que são :
+  * char
+  * int
+  * bool
+  * float
+  * double
+
+* Verifica se cada *nome_variave*l respeita as regras de nome das variáveis.
+
 * Verifica se a linha de entrada termina corretamente com ";".
 
 <h1></h1>
 
-<h2><a name="pre-requisitos">📦 Pré-requisitos</a></h2> 
+<h2><a name="pre-requisitos">📦 Pré-requisitos</a></h2>
 
 ~~~Python
 Python3+ 
@@ -119,50 +120,63 @@ Python3+
 
 <h1></h1>
 
-<h2><a name="como executar">💻 Como Executar</a></h2> 
+<h2><a name="como-executar">💻 Como Executar</a></h2>
 
-Abra o Terminal no diretório do software e digite o seguinte comando: 
+Abra o Terminal no diretório do software e digite o seguinte comando:
+
 ~~~Python
 Python dfa.py
 ~~~
-#### Entrada do usuário:
+
+#### Entrada do usuário
+
 * Para uma única variável
+
 ~~~bash
 tipo_variavel nome_variavel;
 ~~~
+
 * Mais de uma variável
+
 ~~~bash
 tipo_variavel nome_variavel_1, nome_variavel_2, (...);
 ~~~
-#### Possíveis Retornos: 
+
+#### Possíveis Retornos
+
 ~~~bash
 palavra aceita
 ~~~
+
 ~~~bash
 palavra recusada
 ~~~
+
 ~~~bash
 Erro de Declaração de Tipo
 ~~~
+
 <h1></h1>
 
-<h2><a name="exemplos">🎮 Exemplos</a></h2> 
+<h2><a name="exemplos">🎮 Exemplos</a></h2>
 
 ~~~Python
 Python dfa.py
 ~~~
-<h3><a name="palavra aceita">Palavra Aceita</a></h3> 
+
+<h3><a name="palavra-aceita">Palavra Aceita</a></h3>
 
 ~~~Python
 int variavel1;
 ~~~
+
 ~~~Python
 palavra aceita
 Tipo primitivo: int
 Variáveis: ['variavel1']
 ~~~
 
-<h3><a name="palavra recusada">Palavra Recusada</a></h3> 
+<h3><a name="palavra-recusada">Palavra Recusada</a></h3>
 
 ~~~Python
 bool 1Var;
@@ -171,11 +185,13 @@ bool 1Var;
 ~~~Python
 palavra recusada
 ~~~
-<h3><a name="erro de declaração de tipo">Erro de Declaração de tipo</a></h3> 
+
+<h3><a name="erro-de-declaracao-de-tipo">Erro de Declaração de tipo</a></h3>
 
 ~~~Python
 chaars Var1;
 ~~~
+
 ~~~Python
 Erro de Declaração de Tipo: chaars
 ~~~
@@ -185,6 +201,7 @@ Erro de Declaração de Tipo: chaars
 ~~~Python
 bool var1, var1; char var 3
 ~~~
+
 ~~~Python
 palavra aceita
 Tipo primitivo: bool
@@ -194,10 +211,12 @@ palavra recusada
 
 <h1></h1>
 
-<h2><a name="equipe">👥 Equipe</a></h2> 
+<h2><a name="equipe">👥 Equipe</a></h2>
 
 #### 👤[Aimeê Miranda Ribeiro](https://github.com/Eemiaa) | 202104940014
- 
+
 #### 👤[Letícia Costa da Silva](https://github.com/leticiacostt) | 202104940017
+
 #### 👤[Luiz Jordany de Sousa Silva](https://github.com/oJordany) | 202104940005
+
 #### 👤[Syanne Karoline Moreira Tavares](https://github.com/syannekaroline) | 202104920029
